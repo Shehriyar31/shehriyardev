@@ -1,0 +1,27 @@
+.form-control::placeholder {
+  color: #94a3b8 !important;
+  opacity: 1;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #94a3b8 !important;
+}
+
+.form-control::-moz-placeholder {
+  color: #94a3b8 !important;
+  opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #94a3b8 !important;
+}
+
+.form-control:-moz-placeholder {
+  color: #94a3b8 !important;
+  opacity: 1;
+}
+
+.form-select option {
+  background: #1a0f2e;
+  color: #e5e7eb;
+}

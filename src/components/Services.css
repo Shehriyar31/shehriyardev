@@ -1,0 +1,56 @@
+.services-section {
+  padding: 80px 0;
+  background: #1a0f2e;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #a855f7;
+  margin-bottom: 1rem;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+  margin-bottom: 3rem;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  border-color: #a855f7;
+  box-shadow: 0 20px 40px rgba(168, 85, 247, 0.3);
+}
+
+.service-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #a855f7;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+  color: #c084fc;
+  transform: scale(1.1);
+}
+
+.service-title {
+  color: #a855f7;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.service-description {
+  color: #cbd5e1;
+  line-height: 1.6;
+}

@@ -1,0 +1,190 @@
+.get-account-page {
+  padding-top: 80px;
+  min-height: 100vh;
+  background: #1a0f2e;
+  color: #e5e7eb;
+}
+
+/* Partners Section */
+.partners-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #1e1b4b 0%, #2d1b69 100%);
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #a855f7;
+  margin-bottom: 1rem;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+  margin-bottom: 3rem;
+}
+
+.exchange-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.exchange-card:hover {
+  transform: translateY(-10px);
+  border-color: #a855f7;
+  box-shadow: 0 20px 40px rgba(168, 85, 247, 0.3);
+}
+
+.exchange-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #a855f7, #c084fc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.exchange-card:hover .exchange-logo {
+  transform: scale(1.1);
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.exchange-name {
+  color: #a855f7;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.exchange-description {
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.exchange-btn {
+  background: linear-gradient(45deg, #a855f7, #c084fc);
+  border: none;
+  border-radius: 25px;
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.exchange-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(168, 85, 247, 0.4);
+}
+
+/* Offers Section */
+.offers-section {
+  padding: 80px 0;
+  background: #1a0f2e;
+}
+
+.account-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.account-card:hover {
+  transform: translateY(-10px);
+  border-color: #a855f7;
+  box-shadow: 0 20px 40px rgba(168, 85, 247, 0.3);
+}
+
+.account-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #a855f7, #c084fc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.account-card:hover .account-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.account-title {
+  color: #a855f7;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+}
+
+.account-description {
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.account-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.account-features li {
+  color: #cbd5e1;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.feature-check {
+  color: #a855f7;
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.account-btn {
+  border: 2px solid #a855f7;
+  color: #a855f7;
+  border-radius: 25px;
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.account-btn:hover {
+  background: linear-gradient(45deg, #a855f7, #c084fc);
+  border-color: #a855f7;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(168, 85, 247, 0.4);
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .exchange-card,
+  .account-card {
+    margin-bottom: 2rem;
+  }
+}

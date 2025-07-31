@@ -1,0 +1,94 @@
+body {
+  background-color: #1a0f2e;
+  color: #e5e7eb;
+  font-family: 'Poppins', 'Roboto', 'Urbanist', sans-serif;
+}
+
+.custom-navbar {
+  background: linear-gradient(135deg, #2d1b69 0%, #1e1b4b 50%, #312e81 100%) !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(168, 85, 247, 0.3);
+  border-bottom: 1px solid rgba(168, 85, 247, 0.2);
+  transition: all 0.3s ease;
+}
+
+.custom-navbar:hover {
+  box-shadow: 0 6px 30px rgba(168, 85, 247, 0.4);
+}
+
+.custom-navbar .navbar-brand {
+  background: linear-gradient(45deg, #a855f7, #c084fc, #e879f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  font-family: 'Urbanist', 'Poppins', sans-serif;
+}
+
+.custom-navbar .navbar-brand:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 10px rgba(168, 85, 247, 0.6));
+}
+
+.custom-navbar .nav-link {
+  color: #e5e7eb !important;
+  font-weight: 500;
+  margin: 0 10px;
+  padding: 8px 16px !important;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Poppins', 'Roboto', sans-serif;
+}
+
+.custom-navbar .nav-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(168, 85, 247, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.custom-navbar .nav-link:hover::before {
+  left: 100%;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #a855f7 !important;
+  background: rgba(168, 85, 247, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.3);
+}
+
+.custom-navbar .navbar-toggler {
+  border: 2px solid #a855f7;
+  border-radius: 8px;
+}
+
+.custom-navbar .navbar-toggler:focus {
+  box-shadow: 0 0 0 0.2rem rgba(168, 85, 247, 0.25);
+}
+
+.custom-navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23a855f7' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+@media (max-width: 991.98px) {
+  .custom-navbar .navbar-nav {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .custom-navbar .nav-link {
+    margin: 5px auto;
+    display: inline-block;
+  }
+}

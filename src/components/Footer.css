@@ -1,0 +1,130 @@
+.footer-section {
+  background: linear-gradient(135deg, #0f0a1a 0%, #1a0f2e 100%);
+  padding: 60px 0 20px;
+  color: #e5e7eb;
+}
+
+.footer-brand .brand-name {
+  background: linear-gradient(45deg, #a855f7, #c084fc, #e879f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.brand-description {
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(168, 85, 247, 0.1);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a855f7;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background: #a855f7;
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(168, 85, 247, 0.4);
+}
+
+.footer-title {
+  color: #a855f7;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-menu li {
+  margin-bottom: 10px;
+}
+
+.footer-menu a {
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-menu a:hover {
+  color: #a855f7;
+}
+
+.footer-menu li:not(:has(a)) {
+  color: #cbd5e1;
+  cursor: default;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  color: #cbd5e1;
+}
+
+.contact-item i {
+  color: #a855f7;
+  font-size: 1.1rem;
+}
+
+.footer-divider {
+  border-color: rgba(168, 85, 247, 0.2);
+  margin: 2rem 0 1rem;
+}
+
+.copyright {
+  color: #94a3b8;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.contact-item a {
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: #a855f7 !important;
+}
+
+@media (max-width: 768px) {
+  .footer-section {
+    padding: 40px 0 20px;
+    text-align: center;
+  }
+  
+  .footer-brand,
+  .footer-links,
+  .footer-services,
+  .footer-contact {
+    text-align: center;
+  }
+  
+  .contact-item {
+    justify-content: center;
+  }
+}
