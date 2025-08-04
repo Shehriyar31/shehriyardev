@@ -23,7 +23,9 @@ const Footer = () => {
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/about">About</Link></li>
                 <li><Link to="/services">Services</Link></li>
-                <li><Link to="/portfolio">Portfolio</Link></li>
+                <li><Link to="/betting-exchange">Betting Exchange</Link></li>
+                <li><Link to="/get-account">Get Account</Link></li>
+                <li><Link to="/contact">Contact Us</Link></li>
               </ul>
             </div>
           </Col>
@@ -47,8 +49,8 @@ const Footer = () => {
               </div>
               <div className="contact-item">
                 <i className="bi-whatsapp"></i>
-                <a href="https://wa.me/923061823657" target="_blank" rel="noopener noreferrer" style={{color: '#cbd5e1', textDecoration: 'none'}}>
-                  0306-1823657
+                <a href="https://wa.me/923308193806" target="_blank" rel="noopener noreferrer" style={{color: '#cbd5e1', textDecoration: 'none'}}>
+                  +92 330-8193806
                 </a>
               </div>
             </div>

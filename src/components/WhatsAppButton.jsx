@@ -2,7 +2,7 @@ import { OverlayTrigger, Tooltip } from 'react-bootstrap';
 import './WhatsAppButton.css';
 
 const WhatsAppButton = () => {
-  const phoneNumber = "03061823657";
+  const phoneNumber = "923308193806";
   const message = "Hello! I'm interested in your services.";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 

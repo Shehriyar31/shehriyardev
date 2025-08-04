@@ -33,6 +33,7 @@ function App() {
           <Route path="/betting-exchange" element={<BettingExchange />} />
           <Route path="/get-account" element={<GetAccount />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
         <Footer />
         <WhatsAppButton />
