@@ -1,23 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/((?!api/.*).*)",
+      "source": "/(.*)",
       "destination": "/index.html"
     }
-  ],
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    }
   ]
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> ff9bfcf18515b766b01ee3ae62ec0ba416f9d1bd
