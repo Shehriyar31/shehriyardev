@@ -49,8 +49,8 @@ const Footer = () => {
               </div>
               <div className="contact-item">
                 <i className="bi-whatsapp"></i>
-                <a href="https://wa.me/923308193806" target="_blank" rel="noopener noreferrer" style={{color: '#cbd5e1', textDecoration: 'none'}}>
-                  +92 330-8193806
+                <a href="https://wa.me/923286257707" target="_blank" rel="noopener noreferrer" style={{color: '#cbd5e1', textDecoration: 'none'}}>
+                  +92 328-6257707
                 </a>
               </div>
             </div>
