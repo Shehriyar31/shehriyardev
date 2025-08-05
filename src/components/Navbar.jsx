@@ -22,9 +22,7 @@ const CustomNavbar = () => {
             <OverlayTrigger placement="bottom" overlay={<Tooltip>Betting exchange platform</Tooltip>}>
               <Nav.Link as={Link} to="/betting-exchange">Betting Exchange</Nav.Link>
             </OverlayTrigger>
-            <OverlayTrigger placement="bottom" overlay={<Tooltip>Get premium exchange accounts</Tooltip>}>
-              <Nav.Link as={Link} to="/get-account">Get Exchange Account</Nav.Link>
-            </OverlayTrigger>
+
             <OverlayTrigger placement="bottom" overlay={<Tooltip>Contact us for inquiries</Tooltip>}>
               <Nav.Link as={Link} to="/contact">Contact Us</Nav.Link>
             </OverlayTrigger>

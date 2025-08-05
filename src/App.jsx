@@ -14,7 +14,7 @@ import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
 import Home from './pages/Home';
 import About from './pages/About';
-import GetAccount from './pages/GetAccount';
+
 import Contact from './pages/Contact';
 import ServicesPage from './pages/Services';
 import BettingExchange from './pages/BettingExchange';
@@ -31,7 +31,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/betting-exchange" element={<BettingExchange />} />
-          <Route path="/get-account" element={<GetAccount />} />
+
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
