@@ -17,7 +17,7 @@ import About from './pages/About';
 
 import Contact from './pages/Contact';
 import ServicesPage from './pages/Services';
-import BettingExchange from './pages/BettingExchange';
+
 import './App.css';
 
 function App() {
@@ -30,7 +30,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<ServicesPage />} />
-          <Route path="/betting-exchange" element={<BettingExchange />} />
+
 
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Navigate to="/" replace />} />

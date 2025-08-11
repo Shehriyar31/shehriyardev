@@ -55,9 +55,9 @@ const Hero = () => {
                     Get Started
                   </Button>
                 </OverlayTrigger>
-                <OverlayTrigger placement="top" overlay={<Tooltip>View our portfolio</Tooltip>}>
-                  <Button as={Link} to="/betting-exchange" variant="outline-light" size="lg" className="custom-btn-outline">
-                    View Portfolio
+                <OverlayTrigger placement="top" overlay={<Tooltip>View our services</Tooltip>}>
+                  <Button as={Link} to="/services" variant="outline-light" size="lg" className="custom-btn-outline">
+                    View Services
                   </Button>
                 </OverlayTrigger>
               </div>
