@@ -23,6 +23,9 @@ const CustomNavbar = () => {
             <OverlayTrigger placement="bottom" overlay={<Tooltip>View our services</Tooltip>}>
               <Nav.Link as={Link} to="/services">Services</Nav.Link>
             </OverlayTrigger>
+            <OverlayTrigger placement="bottom" overlay={<Tooltip>View our portfolio</Tooltip>}>
+              <Nav.Link as={Link} to="/portfolio">Portfolio</Nav.Link>
+            </OverlayTrigger>
 
 
             <OverlayTrigger placement="bottom" overlay={<Tooltip>Contact us for inquiries</Tooltip>}>

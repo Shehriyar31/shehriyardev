@@ -117,8 +117,7 @@ const Contact = () => {
                       <option value="one-page-website">One Page Website</option>
                       <option value="website-for-business">Website for Business</option>
                       <option value="ecommerce-store">E-Commerce Store</option>
-                      <option value="betting-exchange">Betting Exchange Development</option>
-                      <option value="exchange-account">Get Exchange Account</option>
+
                     </Form.Select>
                   </Form.Group>
                 </Col>
