@@ -1,4 +1,4 @@
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Container, Row, Col, Card, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Services.css';
 
@@ -24,13 +24,6 @@ const Services = () => {
       icon: 'bi-cart',
       features: ['Payment Gateway', 'API Development', 'Inventory Management', 'Order Management', 'Analytics Dashboard', 'Multi-vendor Support'],
       price: 'PKR 70,000'
-    },
-    {
-      title: 'Betting Exchange',
-      description: 'Enterprise-level betting exchange platform with seamless Betfair API integration. Features separate sophisticated interfaces for administrators, dealers, and clients with real-time odds updates, secure transaction processing, and comprehensive reporting systems.',
-      icon: 'bi-trophy',
-      features: ['Betfair API Integration', 'Admin Dashboard', 'Dealer Interface', 'Client UI', 'Real-time Updates', 'Secure Transactions'],
-      price: 'PKR 500,000'
     }
   ];
 
@@ -81,24 +74,39 @@ const Services = () => {
           <Row>
             {services.map((service, index) => (
               <Col lg={4} md={6} key={index} className="mb-4">
-                <Card className="service-detail-card h-100">
-                  <Card.Body>
-                    <div className="service-header">
-                      <i className={`${service.icon} service-detail-icon`}></i>
-                      <h3 className="service-detail-title">{service.title}</h3>
-                    </div>
-                    <p className="service-detail-description">{service.description}</p>
-                    <ul className="service-features">
-                      {service.features.map((feature, idx) => (
-                        <li key={idx}>
-                          <i className="bi-check-circle me-2"></i>
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-                    <Link to="/contact" className="service-price-button">{service.price}</Link>
-                  </Card.Body>
-                </Card>
+                <OverlayTrigger
+                  placement="top"
+                  overlay={<Tooltip>Click to learn more about {service.title}</Tooltip>}
+                >
+                  <Card className="service-detail-card h-100">
+                    <Card.Body>
+                      <div className="service-header">
+                        <OverlayTrigger
+                          placement="top"
+                          overlay={<Tooltip>{service.title} Service</Tooltip>}
+                        >
+                          <i className={`${service.icon} service-detail-icon`}></i>
+                        </OverlayTrigger>
+                        <h3 className="service-detail-title">{service.title}</h3>
+                      </div>
+                      <p className="service-detail-description">{service.description}</p>
+                      <ul className="service-features">
+                        {service.features.map((feature, idx) => (
+                          <li key={idx}>
+                            <i className="bi-check-circle me-2"></i>
+                            {feature}
+                          </li>
+                        ))}
+                      </ul>
+                      <OverlayTrigger
+                        placement="bottom"
+                        overlay={<Tooltip>Contact us for {service.title} - {service.price}</Tooltip>}
+                      >
+                        <Link to="/contact" className="service-price-button">{service.price}</Link>
+                      </OverlayTrigger>
+                    </Card.Body>
+                  </Card>
+                </OverlayTrigger>
               </Col>
             ))}
           </Row>
@@ -119,7 +127,12 @@ const Services = () => {
               <Col lg={3} md={6} key={index} className="mb-4">
                 <div className="process-card text-center">
                   <div className="process-number">{step.step}</div>
-                  <i className={`${step.icon} process-icon`}></i>
+                  <OverlayTrigger
+                    placement="top"
+                    overlay={<Tooltip>{step.title} Process</Tooltip>}
+                  >
+                    <i className={`${step.icon} process-icon`}></i>
+                  </OverlayTrigger>
                   <h4 className="process-title">{step.title}</h4>
                   <p className="process-description">{step.description}</p>
                 </div>
@@ -136,7 +149,12 @@ const Services = () => {
             <Col lg={12} className="text-center">
               <h2 className="cta-title">Ready to Start Your Project?</h2>
               <p className="cta-description">Let's discuss your requirements and create something amazing together</p>
-              <Link to="/contact" className="cta-button">Get Started Today</Link>
+              <OverlayTrigger
+                placement="top"
+                overlay={<Tooltip>Contact us to start your project</Tooltip>}
+              >
+                <Link to="/contact" className="cta-button">Get Started Today</Link>
+              </OverlayTrigger>
             </Col>
           </Row>
         </Container>
