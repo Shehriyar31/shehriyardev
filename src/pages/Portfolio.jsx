@@ -3,6 +3,9 @@ import img1 from '../assets/1.png';
 import img2 from '../assets/2.png';
 import img3 from '../assets/3.png';
 import img4 from '../assets/4.png';
+import img5 from '../assets/5.png';
+import img6 from '../assets/6.png';
+import img7 from '../assets/7.png';
 import './Portfolio.css';
 
 const Portfolio = () => {
@@ -30,6 +33,24 @@ const Portfolio = () => {
       description: 'All-in-one social media downloader for TikTok, Facebook, and Instagram reels and videos with fast download speeds.',
       tech: 'React, Bootstrap',
       image: img4
+    },
+    {
+      title: 'Weather App',
+      description: 'Real-time weather application using OpenWeather API with current conditions, forecasts, and location-based weather updates.',
+      tech: 'React, Vite',
+      image: img5
+    },
+    {
+      title: 'Todo List Manager',
+      description: 'Interactive task management application with add, edit, delete functionality and local storage for persistent data.',
+      tech: 'React, Bootstrap, Vite',
+      image: img6
+    },
+    {
+      title: 'Password Manager',
+      description: 'Secure password storage application where users can safely save and manage multiple passwords with encryption.',
+      tech: 'React, Bootstrap, Vite',
+      image: img7
     }
   ];
 
