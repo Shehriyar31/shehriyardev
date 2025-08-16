@@ -16,6 +16,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
+import Error404 from './pages/Error404';
 import ServicesPage from './pages/Services';
 
 import './App.css';
@@ -32,7 +33,7 @@ function App() {
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
+          <Route path="*" element={<Error404 />} />
         </Routes>
         <Footer />
         <WhatsAppButton />

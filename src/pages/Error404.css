@@ -1,0 +1,117 @@
+.error-page {
+  background: linear-gradient(135deg, #1a0f2e 0%, #2d1b69 100%);
+  color: #e5e7eb;
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+.error-content {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.error-number {
+  font-size: 8rem;
+  font-weight: 900;
+  background: linear-gradient(45deg, #a855f7, #c084fc, #e879f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+  font-family: 'Urbanist', sans-serif;
+  text-shadow: 0 0 30px rgba(168, 85, 247, 0.5);
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.error-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #a855f7;
+  margin-bottom: 1.5rem;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.error-description {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.error-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.home-btn {
+  background: linear-gradient(45deg, #a855f7, #c084fc);
+  border: none;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.home-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(168, 85, 247, 0.4);
+}
+
+.contact-btn {
+  border: 2px solid #a855f7;
+  color: #a855f7;
+  padding: 10px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  background: #a855f7;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(168, 85, 247, 0.4);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
+  }
+  to {
+    text-shadow: 0 0 40px rgba(168, 85, 247, 0.8);
+  }
+}
+
+@media (max-width: 768px) {
+  .error-number {
+    font-size: 5rem;
+  }
+  
+  .error-title {
+    font-size: 2rem;
+  }
+  
+  .error-description {
+    font-size: 1rem;
+  }
+  
+  .error-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+}

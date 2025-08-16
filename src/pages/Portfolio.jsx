@@ -6,6 +6,7 @@ import img4 from '../assets/4.png';
 import img5 from '../assets/5.png';
 import img6 from '../assets/6.png';
 import img7 from '../assets/7.png';
+import img8 from '../assets/8.png';
 import './Portfolio.css';
 
 const Portfolio = () => {
@@ -51,6 +52,12 @@ const Portfolio = () => {
       description: 'Secure password storage application where users can safely save and manage multiple passwords with encryption.',
       tech: 'React, Bootstrap, Vite',
       image: img7
+    },
+    {
+      title: 'ProfitPro',
+      description: 'Complete earning platform website with user dashboard, income tracking, and financial management tools for maximizing profits.',
+      tech: 'Vite, React, Bootstrap, Node, Express, MongoDB',
+      image: img8
     }
   ];
 
